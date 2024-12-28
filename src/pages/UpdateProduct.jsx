@@ -152,10 +152,10 @@ const UpdateProduct = () => {
               control={control}
               render={({ field }) => (
                 <Select {...field} label="Category">
-                  <MenuItem value="electronics">Electronics</MenuItem>
-                  <MenuItem value="fashion">Fashion</MenuItem>
-                  <MenuItem value="home">Home</MenuItem>
-                  <MenuItem value="books">Books</MenuItem>
+                  <MenuItem value="Electronics">Electronics</MenuItem>
+                  <MenuItem value="Fashion">Fashion</MenuItem>
+                  <MenuItem value="Home">Home</MenuItem>
+                  <MenuItem value="Books">Books</MenuItem>
                 </Select>
               )}
             />
