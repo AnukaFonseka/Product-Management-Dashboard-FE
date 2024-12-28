@@ -66,8 +66,8 @@ The application will be accessible at http://localhost:5173.
 
 To make it easy for supervisors to evaluate the application, predefined login credentials are included in the login page. <br/>
 
-Email: supervisor@example.com <br/>
-Password: Supervisor123 <br/>
+Email: john@example.com <br/>
+Password: john123 <br/>
 
 You can use these credentials to log in directly from the login screen. 
 
