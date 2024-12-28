@@ -13,13 +13,11 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import Swal from "sweetalert2";
 import {
   useDeleteProductMutation,
-  useGetAllProductsQuery,
 } from "../../store/api/productApi";
 
-const ProductsTable = ({ products }) => {
+const ProductsTable = ({ products, refetch }) => {
   const navigate = useNavigate(); 
   const [deleteProduct, { isLoading }] = useDeleteProductMutation();
-  const { refetch } = useGetAllProductsQuery();
 
   // Handle Delete
   const handleDelete = async (productId) => {
@@ -34,14 +32,29 @@ const ProductsTable = ({ products }) => {
     }).then(async (result) => {
       if (result.isConfirmed) {
         try {
-          await deleteProduct(productId);
-          setTimeout(async () => {
-            await refetch();
-          }, 5000);
-          Swal.fire("Deleted!", "The product has been deleted.", "success");
+          
+          await deleteProduct(productId).unwrap(); 
+
+          
+          Swal.fire({
+            title: "Deleted!",
+            text: "The product has been deleted.",
+            icon: "success",
+            showConfirmButton: false, 
+            timer: 2000, 
+          });
+
+          
+          refetch(); 
         } catch (error) {
           console.error("Delete Error:", error);
-          Swal.fire("Error!", "Failed to delete the product.", "error");
+
+         
+          Swal.fire({
+            title: "Error!",
+            text: "Failed to delete the product.",
+            icon: "error",
+          });
         }
       }
     });
@@ -119,7 +132,7 @@ const ProductsTable = ({ products }) => {
                   <IconButton
                     className="text-prm hover:text-green-700 transition duration-150"
                     aria-label="edit"
-                    onClick={() => handleEdit(product._id)} // Handle Edit on click
+                    onClick={() => handleEdit(product._id)} 
                   >
                     <EditIcon />
                   </IconButton>

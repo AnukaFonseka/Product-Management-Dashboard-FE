@@ -50,9 +50,9 @@ const AddUserModal = ({ open, onClose }) => {
     <Modal
       open={open}
       onClose={onClose}
-      className="flex items-center justify-center"
+      className="flex items-center justify-center outline-none"
     >
-      <div className="bg-white rounded-lg shadow-lg p-6 w-full max-w-md">
+      <div className="bg-white rounded-lg shadow-lg p-6 w-full max-w-md outline-none">
         {/* Header */}
         <h2 className="text-2xl font-semibold text-prm mb-6 text-center">
           Add User

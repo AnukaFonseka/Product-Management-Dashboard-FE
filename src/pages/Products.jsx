@@ -157,7 +157,7 @@ const Products = () => {
           </p>
         </div>
       ) : (
-        <ProductsTable products={filteredRows} />
+        <ProductsTable products={filteredRows} refetch={refetch} />
       )}
     </div>
   );

@@ -110,14 +110,7 @@ const AddProduct = () => {
     <Box className="flex items-center justify-center min-h-screen bg-gradient-to-t from-scn to-prm/50">
       <Paper elevation={6} className="p-8 rounded-lg shadow-lg max-w-lg w-full">
         {/* Header */}
-        <Typography
-          variant="h4"
-          textAlign="center"
-          gutterBottom
-          className="text-prm font-bold"
-        >
-          Add Product
-        </Typography>
+        <h1 className="text-3xl font-bold text-prm mb-6 text-center">Add Product</h1>
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
           {/* Product Name */}
           <TextField
