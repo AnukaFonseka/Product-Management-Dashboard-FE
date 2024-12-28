@@ -102,12 +102,12 @@ export const Sidebar = () => {
       </CSidebarNav>
 
       {/* Logout Button */}
-      <div className="mt-auto mb-4">
+      <div className="mt-auto mb-4 mx-2">
         <button
           onClick={handleLogout}
-          className="w-full hover:bg-prm text-black font-bold py-2 px-4 rounded"
+          className="w-full hover:bg-prm text-black font-bold py-2 rounded"
         >
-          <ExitToAppIcon className="mr-2" />
+          <ExitToAppIcon className="" />
           {showEmail && (
             <span
               className="text-gray-700 text-sm font-medium"
