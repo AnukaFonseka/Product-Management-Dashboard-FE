@@ -60,19 +60,19 @@ const ProductsTable = ({ products }) => {
       <Table className="min-w-full">
         <TableHead className="bg-prm text-white">
           <TableRow>
-            <TableCell className="font-bold text-white !pl-10">
+            <TableCell className="!font-bold text-white !pl-10 !text-lg">
               Product Name
             </TableCell>
-            <TableCell align="left" className="font-bold text-white">
+            <TableCell align="left" className="!font-bold text-white !text-base">
               Description
             </TableCell>
-            <TableCell align="left" className="font-bold text-white">
+            <TableCell align="left" className="!font-bold text-white !text-base">
               Category
             </TableCell>
-            <TableCell align="left" className="font-bold text-white">
-              Price
+            <TableCell align="left" className="!font-bold text-white !text-base">
+              Price (LKRs)
             </TableCell>
-            <TableCell align="center" className="font-bold text-white">
+            <TableCell align="center" className="!font-bold text-white !text-base">
               Actions
             </TableCell>
           </TableRow>
