@@ -26,7 +26,7 @@ Follow the steps below to set up the project locally:
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/AnukaFonseka/Product-Management-Dashboard-FE.git
 ```
 
 ### 2. Navigate to the Project Directory
@@ -36,29 +36,29 @@ cd <project-directory>
 ```
 
 ### 3. Install Dependencies
-# Install the required Node.js packages using:
+#### Install the required Node.js packages using:
 
 ```bash
 npm install
 ```
 
-# Or, if you prefer yarn:
+#### Or, if you prefer yarn:
 
 ```bash
 yarn install
 ```
 
 ### 5. Run the Application
-# Start the development server:
+#### Start the development server:
 
 ```bash
-npm start
+npm run dev
 ```
 
-### Or, if using yarn:
+#### Or, if using yarn:
 
 ```bash
 yarn start
 ```
 
-# The application will be accessible at http://localhost:3000.
+#### The application will be accessible at http://localhost:3000.
