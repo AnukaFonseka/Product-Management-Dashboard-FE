@@ -73,7 +73,8 @@ const ProductsTable = ({ products, refetch }) => {
       <Table className="min-w-full">
         <TableHead className="bg-prm text-white">
           <TableRow>
-            <TableCell className="!font-bold text-white !pl-10 !text-lg">
+            <TableCell className="font-bold text-white !pl-10">Image</TableCell>
+            <TableCell className="!font-bold text-white !text-lg">
               Product Name
             </TableCell>
             <TableCell align="left" className="!font-bold text-white !text-base">
@@ -108,6 +109,13 @@ const ProductsTable = ({ products, refetch }) => {
                   index % 2 === 0 ? "bg-scn" : "bg-white"
                 } hover:bg-gray-100 transition duration-200`}
               >
+                <TableCell align="left" className="text-gray-700 !pl-10">
+                  <img
+                    src={product.productImage}
+                    alt={product.productName}
+                    className="w-12 h-12 object-cover rounded-md shadow-md"
+                  />
+                </TableCell>
                 <TableCell
                   component="th"
                   scope="row"
