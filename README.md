@@ -36,29 +36,29 @@ cd <project-directory>
 ```
 
 ### 3. Install Dependencies
-# Install the required Node.js packages using:
+#### Install the required Node.js packages using:
 
 ```bash
 npm install
 ```
 
-# Or, if you prefer yarn:
+#### Or, if you prefer yarn:
 
 ```bash
 yarn install
 ```
 
 ### 5. Run the Application
-# Start the development server:
+#### Start the development server:
 
 ```bash
 npm start
 ```
 
-### Or, if using yarn:
+#### Or, if using yarn:
 
 ```bash
 yarn start
 ```
 
-# The application will be accessible at http://localhost:3000.
+#### The application will be accessible at http://localhost:3000.
