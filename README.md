@@ -88,7 +88,6 @@ Once logged in, you can create new users. After registration, you will be able t
 
 1. Failed to start server
     - Ensure all dependencies are installed (npm install).
-    - Check if the port 3000 is already in use.
 
 2. Asset loading errors
     - Ensure all asset paths are correct and case-sensitive.
