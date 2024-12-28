@@ -62,6 +62,26 @@ yarn start
 ```
 The application will be accessible at http://localhost:5173.
 
+## Login Credentials
+
+To make it easy for supervisors to evaluate the application, predefined login credentials are included in the login page. <br/>
+
+Email: supervisor@example.com <br/>
+Password: Supervisor123 <br/>
+
+You can use these credentials to log in directly from the login screen. 
+
+## Creating New Users
+
+Once logged in, you can create new users. After registration, you will be able to log in using the new user's credentials. 
+
+### Follow these steps:
+
+ - Navigate to the Create User page.
+ - Fill out the registration form with the desired email and password.
+ - Submit the form to create the user.
+ - Log out from the current session and log in again with the newly created user's credentials.
+
 ## Troubleshooting
 
 ### Common Issues

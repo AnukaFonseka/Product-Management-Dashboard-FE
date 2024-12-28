@@ -1,5 +1,13 @@
 import React from "react";
-import { TextField, Button, CircularProgress, Box, Typography, Paper } from "@mui/material";
+import {
+  TextField,
+  Button,
+  CircularProgress,
+  Box,
+  Typography,
+  Paper,
+  Divider,
+} from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
@@ -56,8 +64,8 @@ const Login = () => {
         background: "linear-gradient(135deg, #74b49b 0%, #f4f9f4 100%)",
       }}
     >
-      <Paper elevation={6} sx={{ padding: 4, borderRadius: 2, maxWidth: 400, width: '100%' }}>
-        <Typography variant="h4" textAlign="center" gutterBottom sx={{ color: '#74b49b' }}>
+      <Paper elevation={6} sx={{ padding: 4, borderRadius: 2, maxWidth: 400, width: "100%" }}>
+        <Typography variant="h4" textAlign="center" gutterBottom sx={{ color: "#74b49b" }}>
           Login
         </Typography>
         <form onSubmit={handleSubmit(handleLogin)}>
@@ -90,7 +98,7 @@ const Login = () => {
               sx={{
                 backgroundColor: "#74b49b",
                 color: "#fff",
-                '&:hover': { backgroundColor: "#68a391" },
+                "&:hover": { backgroundColor: "#68a391" },
               }}
               disabled={isLoading}
             >
@@ -98,6 +106,20 @@ const Login = () => {
             </Button>
           </Box>
         </form>
+
+        <Divider sx={{ marginY: 3 }} />
+
+        <Box>
+          <Typography variant="subtitle1" gutterBottom sx={{ fontWeight: "bold" }}>
+            Login Credentials:
+          </Typography>
+          <Typography variant="body1">
+            <strong>Email:</strong> bob@gmail.com
+          </Typography>
+          <Typography variant="body1">
+            <strong>Password:</strong> bob123
+          </Typography>
+        </Box>
       </Paper>
     </Box>
   );
