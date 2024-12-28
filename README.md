@@ -77,8 +77,8 @@ Once logged in, you can create new users. After registration, you will be able t
 
 ### Follow these steps:
 
- - Navigate to the Create User page.
- - Fill out the registration form with the desired email and password.
+ - Navigate to the Users page.
+ - Click the Add User Button and Fill out the registration form with the desired email and password.
  - Submit the form to create the user.
  - Log out from the current session and log in again with the newly created user's credentials.
 
