@@ -78,5 +78,5 @@ The application will be accessible at http://localhost:5173.
 This project is licensed under the MIT License.
 
 ## Author
-Anuka Fonseka
+Anuka Fonseka <br/>
 [GitHub Profile](https://github.com/AnukaFonseka)
