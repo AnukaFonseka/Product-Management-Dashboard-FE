@@ -16,7 +16,7 @@ import DashboardIcon from "@mui/icons-material/Dashboard";
 import ShoppingBagIcon from "@mui/icons-material/ShoppingBag";
 import GroupIcon from "@mui/icons-material/Group";
 import ExitToAppIcon from "@mui/icons-material/ExitToApp"; // Logout icon
-import image from "../../assets/Images/icon.svg";
+import image from "../../assets/Images/Icon.svg";
 import profile from "../../assets/Images/profile.png";
 import { useNavigate } from "react-router-dom"; // Import useNavigate hook
 
