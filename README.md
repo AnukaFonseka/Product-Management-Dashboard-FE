@@ -27,38 +27,38 @@ Follow the steps below to set up the project locally:
 
 ```bash
 git clone <repository-url>
+```
 
 ### 2. Navigate to the Project Directory
 
+```bash
 cd <project-directory>
+```
 
 ### 3. Install Dependencies
 # Install the required Node.js packages using:
 
+```bash
 npm install
-Or, if you prefer yarn:
+```
 
-bash
-Copy code
+# Or, if you prefer yarn:
+
+```bash
 yarn install
-4. Configure Environment Variables
-Create a .env file in the root of the project and add the following environment variables:
+```
 
-env
-Copy code
-REACT_APP_API_BASE_URL=http://localhost:3000
-REACT_APP_CLOUDINARY_URL=https://api.cloudinary.com/v1_1/<your-cloud-name>/image/upload
-Replace <your-cloud-name> with your Cloudinary cloud name.
+### 5. Run the Application
+# Start the development server:
 
-5. Run the Application
-Start the development server:
-
-bash
-Copy code
+```bash
 npm start
-Or, if using yarn:
+```
 
-bash
-Copy code
+### Or, if using yarn:
+
+```bash
 yarn start
-The application will be accessible at http://localhost:3000.
+```
+
+# The application will be accessible at http://localhost:3000.
