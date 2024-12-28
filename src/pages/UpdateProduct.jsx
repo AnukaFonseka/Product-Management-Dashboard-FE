@@ -181,7 +181,7 @@ const UpdateProduct = () => {
               onChange={handleImageChange}
             />
             <label htmlFor="image-upload">
-              <Button variant="outlined" component="span">
+              <Button variant="outlined" component="span" className="!border-prm bg-transparent hover:bg-prm hover:text-white !text-gray-600 font-semibold py-2 px-4 rounded-lg transition-all !my-2">
                 Upload New Image
               </Button>
               {selectedFileName && <span className="ml-2">{selectedFileName}</span>}
@@ -195,7 +195,7 @@ const UpdateProduct = () => {
             </Box>
           )}
 
-          <Button type="submit" fullWidth variant="contained" disabled={isLoading}>
+          <Button type="submit" fullWidth variant="contained" disabled={isLoading} className="!bg-prm hover:bg-opacity-80 text-white">
             {isLoading ? "Updating..." : "Update Product"}
           </Button>
         </form>
