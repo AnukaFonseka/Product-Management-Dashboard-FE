@@ -1,6 +1,6 @@
 # Product-Management-Dashboard - Frontend
 
-This is the frontend of the application, built with React. It includes features such as user authentication, product management, and an intuitive sidebar interface.
+This is the frontend of the application, built with Vite. It includes features such as user authentication, product management, and an intuitive sidebar interface.
 
 ## Features
 
