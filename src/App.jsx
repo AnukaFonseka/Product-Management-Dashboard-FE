@@ -21,7 +21,6 @@ function App() {
         <Route path="edit-product/:productId" element={<UpdateProduct />} />
         <Route path="users" element={<Users />} />
       </Route>
-      <Analytics />
     </Routes>
     
   );
