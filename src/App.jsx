@@ -7,6 +7,7 @@ import Login from "./pages/Login";
 import AddProduct from "./pages/AddProduct";
 import Users from "./pages/Users";
 import UpdateProduct from "./pages/UpdateProduct";
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -20,7 +21,9 @@ function App() {
         <Route path="edit-product/:productId" element={<UpdateProduct />} />
         <Route path="users" element={<Users />} />
       </Route>
+      <Analytics />
     </Routes>
+    
   );
 }
 
